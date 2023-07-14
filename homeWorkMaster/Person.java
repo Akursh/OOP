@@ -1,11 +1,19 @@
 package homeWorkMaster;
+
+import java.time.LocalDate;
+
 public class Person {
     public String fullName;
-    public int age;
+    public String fullName2;
+    public int age2;
+    private LocalDate age;
 
-    public Person(String fullName, int age) {
+    public Person(String fullName, Sex woman, LocalDate localDate) {
         this.fullName = fullName;
-        this.age = age;
+        this.age = localDate;
+    }
+
+    public Person(String fullName2, Sex man, int age2) {
     }
 
     public String getFullName() {
@@ -16,11 +24,11 @@ public class Person {
         this.fullName = fullName;
     }
 
-    public int getAge() {
+    public LocalDate getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(LocalDate age) {
         this.age = age;
     }
 

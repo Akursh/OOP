@@ -31,7 +31,7 @@ public class Research {
 
         for (Node t : tree) {
 
-            if (t.p1.age <= age && !resultAge.contains(t.p1.fullName)) {
+            if (t.p1.LocalDate() <= age && !resultAge.contains(t.p1.fullName)) {
                 resultAge.add(t.p1.fullName);
             }
         }
